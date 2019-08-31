@@ -28,7 +28,42 @@
 					"sink": {
 						"type": "AzureSqlSink"
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "PersonID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "PersonID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "FullName",
+									"type": "String"
+								},
+								"sink": {
+									"name": "FullName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "BonusAmount",
+									"type": "String"
+								},
+								"sink": {
+									"name": "BonusAmount",
+									"type": "Double"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
