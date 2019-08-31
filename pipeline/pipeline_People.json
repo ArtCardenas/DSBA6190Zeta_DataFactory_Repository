@@ -20,7 +20,7 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
-						"preCopyScript": "truncate table [Application].[People2]",
+						"preCopyScript": "truncate table [Application].[People]",
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
