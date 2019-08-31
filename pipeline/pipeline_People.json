@@ -18,11 +18,22 @@
 					"source": {
 						"type": "AzureSqlSource"
 					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"preCopyScript": "Truncate Table ",
+						"disableMetricsCollection": false
+					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "AzureSqlTable_People",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSqlTable_Dest_People",
 						"type": "DatasetReference"
 					}
 				]
