@@ -25,11 +25,20 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "CSV_DelimitedText",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSqlTable_SaleBonuses",
 						"type": "DatasetReference"
 					}
 				]

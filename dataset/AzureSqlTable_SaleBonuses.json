@@ -1,0 +1,30 @@
+{
+	"name": "AzureSqlTable_SaleBonuses",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DSBA6190Z_AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "PersonID",
+				"type": "varchar"
+			},
+			{
+				"name": "FullName",
+				"type": "varchar"
+			},
+			{
+				"name": "BonusAmount",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "WWI_SaleBonuses"
+		}
+	}
+}
