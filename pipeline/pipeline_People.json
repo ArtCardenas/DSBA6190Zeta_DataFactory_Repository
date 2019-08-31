@@ -59,16 +59,6 @@
 							},
 							{
 								"source": {
-									"name": "SearchName",
-									"type": "String"
-								},
-								"sink": {
-									"name": "SearchName",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
 									"name": "IsPermittedToLogon",
 									"type": "Boolean"
 								},
@@ -199,42 +189,12 @@
 							},
 							{
 								"source": {
-									"name": "OtherLanguages",
-									"type": "String"
-								},
-								"sink": {
-									"name": "OtherLanguages",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
 									"name": "LastEditedBy",
 									"type": "Int32"
 								},
 								"sink": {
 									"name": "LastEditedBy",
 									"type": "Int32"
-								}
-							},
-							{
-								"source": {
-									"name": "ValidFrom",
-									"type": "DateTime"
-								},
-								"sink": {
-									"name": "ValidFrom",
-									"type": "DateTime"
-								}
-							},
-							{
-								"source": {
-									"name": "ValidTo",
-									"type": "DateTime"
-								},
-								"sink": {
-									"name": "ValidTo",
-									"type": "DateTime"
 								}
 							}
 						]
