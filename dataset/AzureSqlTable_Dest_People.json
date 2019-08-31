@@ -99,7 +99,7 @@
 		],
 		"typeProperties": {
 			"schema": "Application",
-			"table": "People2"
+			"table": "People"
 		}
 	}
 }
