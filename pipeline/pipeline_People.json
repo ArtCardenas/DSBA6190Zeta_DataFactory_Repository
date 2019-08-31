@@ -15,8 +15,17 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource"
+					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "AzureSqlTable_People",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
